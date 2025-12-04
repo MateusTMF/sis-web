@@ -1,10 +1,10 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { FormCadastroProjeto } from "@/components/projeto/form-cadastro-projeto"
 import type { ProjetoTecnico } from "@/lib/types/projeto"
 import Sidebar from "@/components/sidebar"
 import { Card } from "@/components/ui/card"
+import FormCadastroProjeto from "@/components/projeto/form-cadastro-projeto"
 
 export default function NovoProjeto() {
   const router = useRouter()
