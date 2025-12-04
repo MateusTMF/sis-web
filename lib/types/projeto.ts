@@ -95,9 +95,9 @@ export interface ProjetoTecnico {
 
   // Tanque
   tipoTanque: string // Oval
-  materalTanque: string
+  materialTanque: string
   alturaTanque: number // mm
-  larguratanque: number // mm
+  larguraTanque: number // mm
   profundidadeTanque: number // mm
   pesoTanque: number // kg
   volumeOleo: number // L
@@ -232,9 +232,9 @@ export const projetoMock: ProjetoTecnico[] = [
     nBobinas: 1,
     espPorCamadaBT: 29.5,
     tipoTanque: "Oval",
-    materalTanque: "Aço",
+    materialTanque: "Aço",
     alturaTanque: 830,
-    larguratanque: 785,
+    larguraTanque: 785,
     profundidadeTanque: 325,
     pesoTanque: 180.37,
     volumeOleo: 156.0,

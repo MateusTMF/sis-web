@@ -18,7 +18,7 @@ interface FormCadastroProjeto {
   projetoInicial?: ProjetoTecnico
 }
 
-export default function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCadastroProjeto) {
+export function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCadastroProjeto) {
   const [projeto, setProjeto] = useState<ProjetoTecnico>(
     projetoInicial || {
       id: "",
@@ -33,9 +33,9 @@ export default function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCa
       frequencia: 60,
       tensaoATPrimaria: 0,
       tensaoBT: 0,
-      correnteAT1: 0,
+      correnteAT: 0,
       correnteBT: 0,
-      tipoNucleo: "",
+      tipNucleo: "",
       materialNucleo: "",
       pesNucleo: 0,
       tipoFioAT: "",
@@ -51,9 +51,9 @@ export default function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCa
       secoFioBT: 0,
       pesoFioBT: 0,
       tipoTanque: "",
-      materalTanque: "",
+      materialtanque: "",
       alturaTanque: 0,
-      largaTanque: 0,
+      largatanque: 0,
       profundidadeTanque: 0,
       pesoTanque: 0,
       volumeOleo: 0,
@@ -62,11 +62,12 @@ export default function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCa
       perda: 0,
       impedancia: 0,
       temperatura: 0,
+      classe: "",
       norma: "",
       desenhos: [],
       observacoes: "",
       especificacoes: "",
-    }
+    },
   )
 
   const [desenhos, setDesenhos] = useState<File[]>([])
@@ -488,8 +489,8 @@ export default function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCa
                   <Label>Largura (mm)</Label>
                   <Input
                     type="number"
-                    value={projeto.larguratanque}
-                    onChange={(e) => handleInputChange("larguratanque", Number.parseFloat(e.target.value))}
+                    value={projeto.larguraTanque}
+                    onChange={(e) => handleInputChange("larguraTanque", Number.parseFloat(e.target.value))}
                   />
                 </div>
                 <div>
