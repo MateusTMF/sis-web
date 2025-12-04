@@ -10,20 +10,20 @@ export interface OrdemProducaoDetalhes {
   dataPrazo: string
   dataConclusao?: string
 
-  // Vinculação ao Projeto
   projetoId: string
   projeto: ProjetoTecnico
 
-  // Status e Controle
   status: "aguardando" | "em-producao" | "pausada" | "concluida"
-  progresso: number // 0-100% (calculado automaticamente)
+  progresso: number
   prioridade: "baixa" | "normal" | "alta" | "urgente"
 
-  // Etapas por Setor (cada setor executa sua parte)
   etapas: Record<SetorProducao, EtapaProducao>
   setorAtual?: SetorProducao
 
-  // Observações gerais da ordem
+  operador?: string | null
+  maquina?: string | null
+  secao?: string | null
+
   observacoes: string
   anotacoes: Array<{
     id: string
