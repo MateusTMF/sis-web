@@ -18,56 +18,56 @@ interface FormCadastroProjeto {
   projetoInicial?: ProjetoTecnico
 }
 
-const [projeto, setProjeto] = useState<ProjetoTecnico>(
-  projetoInicial || {
-    id: "",
-    numero: "",
-    nome: "",
-    dataCriacao: new Date().toISOString(),
-    dataAtualizacao: new Date().toISOString(),
-    potencia: 0,
-    classe: 0, // ✅ número
-    tipoTransformador: "",
-    fases: 3,
-    frequencia: 60,
-    tensaoATPrimaria: 0,
-    tensaoBT: 0,
-    correnteAT: 0,
-    correnteBT: 0,
-    tipNucleo: "",
-    materialNucleo: "",
-    pesNucleo: 0,
-    tipoFioAT: "",
-    diametroFioAT: 0,
-    numeroEspirasAT: 0,
-    numeroCapasAT: 0,
-    secoFioAT: 0,
-    pesoFioAT: 0,
-    tipoFioBT: "",
-    diametroFioBT: 0,
-    numeroEspirasBT: 0,
-    numeroCapasBT: 0,
-    secoFioBT: 0,
-    pesoFioBT: 0,
-    tipoTanque: "",
-    materialtanque: "",
-    alturaTanque: 0,
-    largatanque: 0,
-    profundidadeTanque: 0,
-    pesoTanque: 0,
-    volumeOleo: 0,
-    nivelOleo: 0,
-    massaTotalTrafo: 0,
-    perda: 0,
-    impedancia: 0,
-    temperatura: 0,
-    norma: "",
-    desenhos: [],
-    observacoes: "",
-    especificacoes: "",
-  }
-)
-
+export default function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCadastroProjeto) {
+  const [projeto, setProjeto] = useState<ProjetoTecnico>(
+    projetoInicial || {
+      id: "",
+      numero: "",
+      nome: "",
+      dataCriacao: new Date().toISOString(),
+      dataAtualizacao: new Date().toISOString(),
+      potencia: 0,
+      classe: 0,
+      tipoTransformador: "",
+      fases: 3,
+      frequencia: 60,
+      tensaoATPrimaria: 0,
+      tensaoBT: 0,
+      correnteAT1: 0,
+      correnteBT: 0,
+      tipoNucleo: "",
+      materialNucleo: "",
+      pesNucleo: 0,
+      tipoFioAT: "",
+      diametroFioAT: 0,
+      numeroEspirasAT: 0,
+      numeroCapasAT: 0,
+      secoFioAT: 0,
+      pesoFioAT: 0,
+      tipoFioBT: "",
+      diametroFioBT: 0,
+      numeroEspirasBT: 0,
+      numeroCapasBT: 0,
+      secoFioBT: 0,
+      pesoFioBT: 0,
+      tipoTanque: "",
+      materalTanque: "",
+      alturaTanque: 0,
+      largaTanque: 0,
+      profundidadeTanque: 0,
+      pesoTanque: 0,
+      volumeOleo: 0,
+      nivelOleo: 0,
+      massaTotalTrafo: 0,
+      perda: 0,
+      impedancia: 0,
+      temperatura: 0,
+      norma: "",
+      desenhos: [],
+      observacoes: "",
+      especificacoes: "",
+    }
+  )
 
   const [desenhos, setDesenhos] = useState<File[]>([])
 
@@ -257,8 +257,8 @@ const [projeto, setProjeto] = useState<ProjetoTecnico>(
                   <Input
                     type="number"
                     placeholder="3.14"
-                    value={projeto.correnteAT}
-                    onChange={(e) => handleInputChange("correnteAT", Number.parseFloat(e.target.value))}
+                    value={projeto.correnteAT1}
+                    onChange={(e) => handleInputChange("correnteAT1", Number.parseFloat(e.target.value))}
                   />
                 </div>
                 <div>
@@ -304,8 +304,8 @@ const [projeto, setProjeto] = useState<ProjetoTecnico>(
                   <Label>Tipo de Núcleo</Label>
                   <Input
                     placeholder="Ex: Núcleo de Ferro"
-                    value={projeto.tipNucleo}
-                    onChange={(e) => handleInputChange("tipNucleo", e.target.value)}
+                    value={projeto.tipoNucleo}
+                    onChange={(e) => handleInputChange("tipoNucleo", e.target.value)}
                   />
                 </div>
                 <div>
@@ -470,8 +470,8 @@ const [projeto, setProjeto] = useState<ProjetoTecnico>(
                   <Label>Material Tanque</Label>
                   <Input
                     placeholder="Ex: Aço"
-                    value={projeto.materialtanque}
-                    onChange={(e) => handleInputChange("materialtanque", e.target.value)}
+                    value={projeto.materialTanque}
+                    onChange={(e) => handleInputChange("materialTanque", e.target.value)}
                   />
                 </div>
               </div>
@@ -488,8 +488,8 @@ const [projeto, setProjeto] = useState<ProjetoTecnico>(
                   <Label>Largura (mm)</Label>
                   <Input
                     type="number"
-                    value={projeto.largatanque}
-                    onChange={(e) => handleInputChange("largatanque", Number.parseFloat(e.target.value))}
+                    value={projeto.larguratanque}
+                    onChange={(e) => handleInputChange("larguratanque", Number.parseFloat(e.target.value))}
                   />
                 </div>
                 <div>
