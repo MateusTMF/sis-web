@@ -20,9 +20,9 @@ export interface OrdemProducaoDetalhes {
   etapas: Record<SetorProducao, EtapaProducao>
   setorAtual?: SetorProducao
 
-  operador?: string | null
-  maquina?: string | null
-  secao?: string | null
+  operador?: string
+  maquina?: string 
+  secao?: string 
 
   observacoes: string
   anotacoes: Array<{
