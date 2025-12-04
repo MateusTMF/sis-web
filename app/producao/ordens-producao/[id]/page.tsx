@@ -218,7 +218,7 @@ export default function DetalheOrdemPage({ params }: { params: { id: string } })
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Tipo de Núcleo</p>
-                      <p className="font-semibold">{ordem.projeto.tipNucleo}</p>
+                      <p className="font-semibold">{ordem.projeto.tipoNucleo}</p>
                     </div>
                   </div>
                 </div>
