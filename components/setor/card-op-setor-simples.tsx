@@ -45,7 +45,7 @@ export function CardOpSetorSimples({ op, setor }: CardOpSetorSimplesProps) {
       "com-erro": "Com Erro",
       pausada: "Pausada",
     }
-    return statusMap[status] || status
+  return statusMap[status as keyof typeof statusMap] || status
   }
 
   return (
