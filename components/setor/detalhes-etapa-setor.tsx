@@ -64,7 +64,7 @@ export function DetalhesEtapaSetor({ op, setor }: DetalhesEtapaSetorProps) {
         {/* Status Selection */}
         <div className="space-y-2">
           <label className="text-sm font-medium">Selecione o Status</label>
-          <Select value={status} onValueChange={setStatus}>
+<Select value={status} onValueChange={(value) => setStatus(value as typeof status)}>
             <SelectTrigger>
               <SelectValue />
             </SelectTrigger>
