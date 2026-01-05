@@ -17,7 +17,7 @@ interface FormCadastroProjeto {
   onSalvar: (projeto: ProjetoTecnico) => void
   projetoInicial?: ProjetoTecnico
 }
-
+/*
 export function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCadastroProjeto) {
   const [projeto, setProjeto] = useState<ProjetoTecnico>(
     projetoInicial || {
@@ -102,7 +102,7 @@ export function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCadastroPr
           <TabsTrigger value="desenhos">Desenhos</TabsTrigger>
         </TabsList>
 
-        {/* Dados Gerais */}
+        {/* Dados Gerais *//*}
         <TabsContent value="gerais" className="space-y-4">
           <Card>
             <CardHeader>
@@ -214,7 +214,7 @@ export function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCadastroPr
           </Card>
         </TabsContent>
 
-        {/* Dados Elétricos */}
+        {/* Dados Elétricos *//*}
         <TabsContent value="eletricos" className="space-y-4">
           <Card>
             <CardHeader>
@@ -331,7 +331,7 @@ export function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCadastroPr
           </Card>
         </TabsContent>
 
-        {/* Enrolamentos */}
+        {/* Enrolamentos *//*}
         <TabsContent value="enrolamentos" className="space-y-4">
           <Card>
             <CardHeader>
@@ -540,7 +540,7 @@ export function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCadastroPr
           </Card>
         </TabsContent>
 
-        {/* Desenhos */}
+        {/* Desenhos *//*}
         <TabsContent value="desenhos" className="space-y-4">
           <Card>
             <CardHeader>
@@ -598,4 +598,4 @@ export function FormCadastroProjeto({ onSalvar, projetoInicial }: FormCadastroPr
       </div>
     </div>
   )
-}
+}*/
