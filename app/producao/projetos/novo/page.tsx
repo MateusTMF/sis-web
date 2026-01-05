@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation"
 import type { ProjetoTecnico } from "@/lib/types/projeto"
 import Sidebar from "@/components/sidebar"
 import { Card } from "@/components/ui/card"
-import { FormCadastroProjeto } from "@/components/projeto/form-cadastro-projeto"
+//import { FormCadastroProjeto } from "@/components/projeto/form-cadastro-projeto"
 
 export default function NovoProjeto() {
   const router = useRouter()
@@ -19,7 +19,7 @@ export default function NovoProjeto() {
     router.push("/producao/projetos")
   }
 
-  return (
+  /*return (
     <div className="min-h-screen bg-background p-12">
       <Sidebar />
       <div className="mx-auto max-w-5xl space-y-6">
@@ -34,4 +34,4 @@ export default function NovoProjeto() {
       </div>
     </div>
   )
-}
+}*/}
