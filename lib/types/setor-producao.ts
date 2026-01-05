@@ -28,19 +28,20 @@ export const SETORES: Record<SetorProducao, { nome: string; descricao: string; o
     descricao: "Montagem e testes elétricos",
     ordem: 4,
   },
-  laboratorio: {
-    nome: "Laboratório",
-    descricao: "Testes e ensaios de qualidade",
-    ordem: 5,
-  },
+  
   pintura: {
     nome: "Pintura",
     descricao: "Pintura e acabamento",
-    ordem: 6,
+    ordem: 5,
   },
   "montagem-final": {
     nome: "Montagem Final",
     descricao: "Montagem final e embalagem",
+    ordem: 6,
+  },
+  laboratorio: {
+    nome: "Laboratório",
+    descricao: "Testes e ensaios de qualidade",
     ordem: 7,
   },
 }
