@@ -6,11 +6,13 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Settings, Save, Bell, Shield, Globe } from "lucide-react"
+import Sidebar from "@/components/sidebar"
 
 export default function ConfiguracoesSistema() {
   return (
-    <div className="space-y-6">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <div className="min-h-screen bg-background">
+      <Sidebar />
+      <div className="ml-10 p-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Configurações do Sistema</h1>
           <p className="text-muted-foreground mt-2">Gerencie as configurações gerais da aplicação</p>

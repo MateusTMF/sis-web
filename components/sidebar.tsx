@@ -379,10 +379,11 @@ export default function Sidebar() {
           <div className="p-3 border-t border-sidebar-border space-y-1">
             <Button
               variant="ghost"
-              className="w-full justify-start text-sidebar-foreground hover:bg-sidebar-accent text-sm h-9"
-            >
-              <Settings size={16} className="mr-3" />
+              className="w-full justify-start text-sidebar-foreground hover:bg-sidebar-accent text-sm h-9">
+              <Settings size={16} className="mr-3"/>
+              <Link href="/configuracoes/sistema">
               Configurações
+              </Link>
             </Button>
             <Button
               variant="ghost"

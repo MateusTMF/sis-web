@@ -29,7 +29,7 @@ export default function AltaTensaoPage() {
   return (
     <div className="min-h-screen bg-background">
       <Sidebar />
-      <div className="ml-64 p-8">
+      <div className="ml-10 p-8">
         <div className="mx-auto max-w-6xl space-y-6">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tight">{setorInfo.nome}</h1>
