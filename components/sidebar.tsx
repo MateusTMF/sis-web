@@ -117,7 +117,7 @@ export default function Sidebar() {
         { label: "Requisições de Compra", href: "/compras/requisicoes" },
         { label: "Cotações de Fornecedores", href: "/compras/cotacoes" },
         { label: "Pedidos de Compra", href: "/compras/pedidos" },
-        { label: "Entrada de NF-e de Compra", href: "/compras/nfe-entrada" },
+        { label: "Entrada de NF-e de Compra", href: "/compras/nfe-entrada/notas" },
         { label: "Conferência de Itens", href: "/compras/conferencia" },
         { label: "Pagamentos a Fornecedores", href: "/compras/pagamentos" },
         { label: "Relatórios de Compras e Custos", href: "/compras/relatorios" },
