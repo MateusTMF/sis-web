@@ -64,12 +64,10 @@ export default function Sidebar() {
       href: "/producao",
       icon: Factory,
       submenu: [
-      { label: "Dashboard", href: "/producao" },
+      { label: "Dashboard", href: "/producao/dashboard" },
         { label: "Planejamento de Produção", href: "/producao/planejamento" },
         { label: "Cadastro de Projetos", href: "/producao/projetos" },
-        { label: "Novo Projeto", href: "/producao/projetos/novo" },
         { label: "Ordens de Produção (OP)", href: "/producao/ordens-producao" },
-        { label: "Criar Ordem de Produção", href: "/producao/ordens-producao/criar" },
 
         // Setores
         { label: "Núcleo", href: "/producao/nucleo" },
